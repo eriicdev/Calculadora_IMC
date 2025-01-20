@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.Calculadora {
+    margin-top: 36px;
+    width: 100%;
+}
+
+.calcTitle{
+    font-size: 32px;
+}
+
+.Pcalc{
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    & label {
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        font-size: 18px;
+        color: #001428;
+    }
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 12px;
+    width: 300px;
+    border: none;
+    border: solid 2px #001428;
+    border-radius: 4px;
+}
+
+.buttonCalc{
+    width: 300px;
+    padding: 8px;
+    background-color: #0b2c4e;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius:  4px;
+    margin-bottom: 24px;
+}
+
+
+.resultCalc{
+    text-align: center;
+    color: #FF4000;
+    font-weight: bold;
+    font-size: 28px;
+
+    @media (max-width:640px){
+        font-size: 24px;
+    }
+}
+
+
+.infos{
+    text-align: center;
+    margin-top: 32px;
+
+    & p {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+
+        @media (max-width:640px){
+            font-size: 14px;
+        }
+    }
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 20px;
+    width: 130px;
+
+    @media (max-width:640px){
+        width: 100px;
+        gap: 10px;
+    }
+}
